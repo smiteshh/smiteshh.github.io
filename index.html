@@ -12,21 +12,21 @@
     
 
 	<!-- Primary Meta Tags -->
-<title>Smitesh Das - Personal Website</title>
-<meta name="title" content="Smitesh Das - Personal Website" />
+<title>Smitesh Das - Homepage</title>
+<meta name="title" content="Smitesh Das - Homepage" />
 <meta name="description" content="Hi, I'm Smitesh Das. An undergraduate engineering student at National Institute of Technology Durgapur(NIT), India, curious about technology and eager to explore its many dimensions." />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://smiteshh.github.io/" />
-<meta property="og:title" content="Smitesh Das - Personal Website" />
+<meta property="og:title" content="Smitesh Das - Homepage" />
 <meta property="og:description" content="Hi, I'm Smitesh Das. An undergraduate engineering student at National Institute of Technology Durgapur(NIT), India, curious about technology and eager to explore its many dimensions." />
 <meta property="og:image" content="https://raw.githubusercontent.com/smiteshh/smiteshh.github.io/refs/heads/main/og-image.webp" />
 
 <!-- X (Twitter) -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://smiteshh.github.io/" />
-<meta property="twitter:title" content="Smitesh Das - Personal Website" />
+<meta property="twitter:title" content="Smitesh Das - Homepage" />
 <meta property="twitter:description" content="Hi, I'm Smitesh Das. An undergraduate engineering student at National Institute of Technology Durgapur(NIT), India, curious about technology and eager to explore its many dimensions." />
 <meta property="twitter:image" content="https://raw.githubusercontent.com/smiteshh/smiteshh.github.io/refs/heads/main/og-image.webp" />
 
@@ -57,6 +57,43 @@
 		text-decoration: underline;
 		font-weight: 600;
 	}
+
+	.grid-container {
+		display: block;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 925px;
+  gap:10px;
+}
+
+.grid-item {
+	display: block;
+	padding:20px;
+}
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.card-title{
+		font-family: "Google Sans Flex", sans-serif;
+		font-weight: 700;
+	}
+
+.card-description{
+		font-family: "Google Sans Flex", sans-serif;
+		font-weight: 300;
+		color:#333;
+	}
+
+.section-title{
+		max-width: 750px;
+		font-family: "Instrument Serif", serif;
+		font-weight: 300;
+	}
+
 </style>
 	
 </head>
@@ -73,6 +110,23 @@ Have hands-on experience with <u><i>Web-Dev(Node.js)</i></u> & <u><i>Python</i><
 
 I enjoy learning by doing and always on the look to contribute to projects that quench my engineering thirst.<br><br>
 I can be reached on <a href="https://www.linkedin.com/in/smiteshdas">linkedin</a>, <a href="https://github.com/smiteshdas">github</a>, <a href="mailto:smiteshdas1@gmail.com">email</a>.
+
+<br><br>
+
+<h2 class="section-title">featured projects.</h2>
+
+<div class="grid-container">
+  <div class="grid-item"><img src="imgs/accuracy_plot_fat_non_fat.png" width="400px"></div>
+  <div class="grid-item">
+	<h4 class="card-title">Robustness Analysis of sEMG Features for Gesture Classification Under Muscle Fatigue</h4>
+	<p class="card-description">A systematic study evaluating how surface EMG (sEMG) features generalize under muscle fatigue in gesture classification tasks. An RBF-kernel SVM was trained exclusively on non-fatigued data and tested across fatigue conditions to quantify performance degradation.<br><br>
+Time-domain amplitude features (RMS, MAV, VAR, IEMG, WL) demonstrated strong robustness, while frequency-domain features (MF, MPF, Spectral Entropy) showed higher sensitivity to fatigue-induced spectral shifts. <br>
+<br><a href="https://github.com/smiteshdas/emg-feature-robustness-under-fatigue">View on GitHub</a>
+</p>
+</div>
+</div>
+
+
 
 <br><br><center>• • •</center>
 </p>
