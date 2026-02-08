@@ -58,23 +58,25 @@
 		font-weight: 600;
 	}
 
-	.grid-container {
-		display: block;
+.grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 925px;
-  gap:10px;
+  margin: 0 auto;              /* center the grid */
+  gap: 40px;                   /* space between columns */
+  padding: 0 20px;             /* prevent edge bleeding */
+  box-sizing: border-box;
 }
 
 .grid-item {
-	display: block;
-	padding:20px;
+  padding: 0;                  /* remove heavy padding */
 }
-@media (max-width: 600px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
+
+.grid-item img {
+  width: 100%;
+  height: auto;
 }
+
 
 
 .card-title{
@@ -94,6 +96,19 @@
 		font-weight: 300;
 	}
 
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 20px;          /* reduce spacing on mobile */
+    padding: 0 15px;    /* comfortable side spacing */
+  }
+
+  .grid-item {
+    text-align: left;   /* keeps layout clean */
+  }
+}
+
+
 </style>
 	
 </head>
@@ -110,9 +125,8 @@ Have hands-on experience with <u><i>Web-Dev(Node.js)</i></u> & <u><i>Python</i><
 
 I enjoy learning by doing and always on the look to contribute to projects that quench my engineering thirst.<br><br>
 I can be reached on <a href="https://www.linkedin.com/in/smiteshdas">linkedin</a>, <a href="https://github.com/smiteshdas">github</a>, <a href="mailto:smiteshdas1@gmail.com">email</a>.
-
-<br><br>
-
+</p>
+<br>
 <h2 class="section-title">featured projects.</h2>
 
 <div class="grid-container">
@@ -126,10 +140,8 @@ Time-domain amplitude features (RMS, MAV, VAR, IEMG, WL) demonstrated strong rob
 </div>
 </div>
 
-
-
 <br><br><center>• • •</center>
-</p>
+
 </div>
 
 	
