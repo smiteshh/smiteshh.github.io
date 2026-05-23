@@ -55,20 +55,43 @@
 		font-family: "Crimson Text", serif;
 		font-weight: 300;
 	}
-	
 
+.card{
+	max-width: 925px;
+}	
+
+.card-title{
+		font-family: "Crimson Text", serif;
+		font-weight: 700;
+	}
+
+.card-description{
+		font-family: "Crimson Text", serif;
+		font-weight: 300;
+		color:#4d4d4d;
+		font-size:14px;
+}
+
+.card img{
+width:150px;
+float:left;
+margin-right:15px;
+margin-bottom:15px;
+}
+	
+/*
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 925px;
-  margin: 0 auto;              /* center the grid */
-  gap: 40px;                   /* space between columns */
-  padding: 0 20px;             /* prevent edge bleeding */
+  margin: 0 auto;              
+  gap: 40px;                   
+  padding: 0 20px;             
   box-sizing: border-box;
 }
 
 .grid-item {
-  padding: 0;                  /* remove heavy padding */
+  padding: 0;                  
 }
 
 .grid-item img {
@@ -99,15 +122,15 @@
 @media (max-width: 600px) {
   .grid-container {
     grid-template-columns: 1fr;
-    gap: 20px;          /* reduce spacing on mobile */
-    padding: 0 15px;    /* comfortable side spacing */
+    gap: 20px;          
+    padding: 0 15px;    
   }
 
   .grid-item {
-    text-align: left;   /* keeps layout clean */
+    text-align: left;   
   }
 }
-
+*/
 
 </style>
 	
@@ -117,7 +140,7 @@
 	
 <div class="container">
 	<h1 class="title"><img src="smith_profile_pic.webp" width="75px" style="border-radius: 50%; border: 3px solid blue ">&#128075;Hi,I'm <i>Smitesh </i></h1>
-	<p class="text"><i style="color:#4d4d4d;">undergraduate civil engg. student at <b>National Institute of Technology Durgapur, India</b> (class of 2029)</i><br><br>
+	<p class="text"><i style="color:#4d4d4d;">undergraduate civil engg. student at <b style ="font-weight:bold;">National Institute of Technology Durgapur, India</b> (class of 2029)</i><br><br>
 
 interested in computational approaches to engineering and scientific problems, especially where machine learning and code meet real-world physical systems.	<br><br>	
 spent my early-teenage tinkering with Windows Batch files, trying to understand and build radio transmitters from scratch(a circuit from a random corner of internet actually worked!! ).<br><br>
@@ -127,6 +150,17 @@ i can be reached on <a href="https://www.linkedin.com/in/smiteshdas">linkedin</a
 <br>
 <h2 class="section-title">featured projects.</h2>
 
+<div class="card">
+	<img src="imgs/acc_fat_emg_ablation.jpg">
+		<p>
+			<span class="card_title">robustness analysis of sEMG features for upper-limb dynamic movement classification under muscle fatigue</span> —
+			<span class="card_description"> a systematic study evaluating how surface EMG (sEMG) features generalize under muscle fatigue in upper-limb dynamic movement classification tasks. An RBF-kernel SVM was trained exclusively on non-fatigued data and tested across fatigue conditions to quantify performance degradation.<br><br>
+time-domain amplitude features (RMS, MAV, VAR, IEMG, WL) demonstrated strong robustness, while frequency-domain features (MF, MPF, Spectral Entropy) showed higher sensitivity to fatigue-induced spectral shifts. <br>
+<br><a href="https://github.com/smiteshdas/emg-feature-robustness-under-fatigue">view on github</a></span>
+		</p>
+</div>
+
+	<!--
 <div class="grid-container">
   <div class="grid-item"><img src="imgs/acc_fat_emg_ablation.jpg"></div>
   <div class="grid-item">
@@ -137,6 +171,7 @@ Time-domain amplitude features (RMS, MAV, VAR, IEMG, WL) demonstrated strong rob
 </p>
 </div>
 </div>
+	-->
 
 <br><br><center>• • •</center>
 
